@@ -19,7 +19,7 @@ function showNotifications() {
 
                 $('a').attr('target', '_blank');
 
-                $('.nfyFooter a').attr('href', 'https://github.com/nfm886/forum-pasja-informatyki-firefoxExtension');
+                $('.nfyFooter a').attr('href', 'https://github.com/nfm886/forum-pasja-informatyki-chromeExtension');
                 $('.nfyFooter a').text('GitHub')
 
                 $('#nfyReadClose').on('click', () => {
@@ -36,7 +36,7 @@ function showNotifications() {
                                 <p>Brak aktywności</p>
                             </div>
                             <div class="nfyFooter">
-                                <a href="https://github.com/nfm886/forum-pasja-informatyki-firefoxExtension" target="_blank">GitHub</a>
+                                <a href="https://github.com/nfm886/forum-pasja-informatyki-chromeExtension" target="_blank">GitHub</a>
                             </div>
                         </div>
                     </div>`;
@@ -52,4 +52,11 @@ function clearBadge() {
     browser.browserAction.setBadgeText({text: ''});
 }
 
+function setUserTheme() {
+    browser.storage.sync.get(['theme'], (options) => {
+        $('head').append(`<link rel="stylesheet" href="themes/${options.theme}.css">`);
+    });
+}
+
+setUserTheme();
 showNotifications();
