@@ -21,7 +21,7 @@
     "permissions": ["*://*.pasja-informatyki.pl/", "storage"],
     "applications": {
       "gecko": {
-        "id": "powiadomienia-z-pasja@forum.pasja-informatyki.pl",
+        "id": "{902aa5b5-4af1-42c3-85b3-d8d0d1fcc2f9}",
         "strict_min_version": "42.0"
       }
     }
