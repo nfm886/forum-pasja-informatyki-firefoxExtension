@@ -55,6 +55,7 @@ Debuggowanie rozszerzenia możemy włączyć przechodząc pod adres ```about:deb
 ### TODO
 
   - ~~Dodać możliwość obserwowania wybranych tagów z forum~~
+  - Informowanie o nowych tagach poprzez plakietkę.
 
 ### LICENSE
 ----
