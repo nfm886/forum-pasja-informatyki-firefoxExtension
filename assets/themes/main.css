@@ -7,7 +7,6 @@ html, body {
   overflow-x: hidden;
 }
 .notifications {
-  width: 282px;
   max-height: 340px;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -15,6 +14,7 @@ html, body {
 }
 .nfyContainer {
   margin-bottom: 20px;
+  width: 300px;
 }
 .nfyTop {
   font-size: 11px;
@@ -117,14 +117,14 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 282px;
-  padding: 5px;
+  width: 100%;
+  padding: 9px;
   text-align: right;
   font-size: 10px;
 }
 .nfyFooter a {
   text-decoration: none;
-  margin-right: 22px;
+  margin-right: 38px;
 }
 .lds-ripple {
   display: inline-block;
