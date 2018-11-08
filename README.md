@@ -6,6 +6,12 @@ Dodatek znajduje się w [Addons Mozilla](https://addons.mozilla.org/pl/firefox/a
 
 ### CHANGELOG
 
+Wersja 3.2
+  - Zablokowo zakładkę 'Pokaz' w obserwowanych tagach, jeśli nie obserwuje się żadnych tagów
+
+Wersja 3.1
+  - Poprawiono style css dla ekranów, które korzystają ze skalowania interfejsu
+
 Wersja 3.0
   - Dodano możliwość obserwowania wybranych tagów z forum
   - Kilka mniejszych usprawnień
