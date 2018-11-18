@@ -37,18 +37,6 @@ const getLastNotification = new Promise((resolve, reject) => {
   req.send(formData);
 });
 
-const initializeWatchlist = () => {
-  browser.storage.sync.get(['followed'], storage => {
-    if(storage.followed != undefined) {
-      if(storage.followed.length < 1) {
-        browser.storage.sync.set({
-          followed: []
-        });
-      }
-    }
-  });
-}
-
 const updateBadge = () => {
   const req = new XMLHttpRequest();
 
