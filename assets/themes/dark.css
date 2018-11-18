@@ -25,6 +25,9 @@ html, body {
 #nfyReadClose {
     color: #d2d2d2;
 }
+.github-ref {
+    color: #d2d2d2;
+}
 .itemBox, .watchListSettings {
     border-bottom: 1px dashed #181a1f;
     background-color: #282c34;
@@ -71,11 +74,14 @@ a:visited {
 .foundTags > li {
     border-bottom: 1px solid #181a1f;
 }
+.progress[value]::-webkit-progress-bar {
+    background-color: #181a1f;
+}
 .runScan {
     border: none;
 }
-.runScan:hover, .removeFromWatchlist:hover {
-    filter: brightness(120%);
+.runScan:hover, .removeFromWatchlist:hover, .addToWatchlist:hover {
+    background-color: #3a404b;
 }
 .searchTags {
     border: 1px solid #181a1f;
@@ -84,11 +90,6 @@ a:visited {
     outline-color: #126252;
     transition: all .3s ease;
 }
-.searchTags:focus {
-    border-color: #117964;
-    background-color: #7cc363;
-    color: #fff;
-}
-.search-field .clear {
+.search-field {
     color: #fff;
 }

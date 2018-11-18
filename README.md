@@ -5,7 +5,15 @@ Rozszerzenie do przeglądarki Mozilla Firefox, przygotowane z myslą o forum.pas
 Dodatek znajduje się w [Addons Mozilla](https://addons.mozilla.org/pl/firefox/addon/powiadomienia-z-pasją/), skąd też zachęcam do pobrania.
 
 ### CHANGELOG
-
+Wersja 5.0
+  - Dodano powiadomienia dźwiękowe i przez plakietkę o nowych tagach.
+  - Naprawiono błąd przez, który trzeba było zamknąć i otworzyć okienko, aby tagi się zaaktualizowały (teraz okienko jest przeładowywane po przejściu do obserwowanych)
+  - Kilka mniejszych poprawek
+  - Usunięto dublowanie się pytań, przy obserwowaniu kilku tagów, które zostały użyte w tym samym poście.
+  - Zablokowano zakładkę "Pokaż" jeśli nie obserwuje się żadnych tagów.
+  - Upiększenie jasnego motywu, głównie w zakładce "Obserwowane" i drobne poprawki w ciemnym motywie.
+  - Kilka mniejszych poprawek i usprawnień.
+  
 Wersja 3.2
   - Zablokowo zakładkę 'Pokaz' w obserwowanych tagach, jeśli nie obserwuje się żadnych tagów
 
@@ -61,7 +69,7 @@ Debuggowanie rozszerzenia możemy włączyć przechodząc pod adres ```about:deb
 ### TODO
 
   - ~~Dodać możliwość obserwowania wybranych tagów z forum~~
-  - Informowanie o nowych tagach poprzez plakietkę.
+  - ~~Informowanie o nowych tagach poprzez plakietkę.~~
 
 ### LICENSE
 ----
