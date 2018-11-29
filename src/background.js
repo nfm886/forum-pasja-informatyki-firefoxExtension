@@ -37,7 +37,7 @@ const getLastNotification = new Promise((resolve, reject) => {
   req.send(formData);
 });
 
-const updateBadge = () => {
+const updateBadgeNotification = () => {
   const req = new XMLHttpRequest();
 
   req.open('GET', 'https://forum.pasja-informatyki.pl/async-notifications');
@@ -64,6 +64,13 @@ const updateBadge = () => {
     }
   }
   req.send();
+}
+
+const updateBadge = () => {
+  browser.browserAction.getBadgeText({}, callback => {
+    if(callback === "")
+      updateBadgeNotification();
+  });
 }
 
 // watchlist start
@@ -147,10 +154,17 @@ const notifyWatchlist = () => {
         questionsList.length = 0;
 }
 
+const updateBadgeWatchlist = () => {
+  browser.browserAction.getBadgeText({}, callback => {
+    if(callback === "")
+      notifyWatchlist();
+  });
+}
+
 // watchlist end
 
 setInterval(updateBadge, 1000*60);
-setInterval(notifyWatchlist, 1000*60*5);
+setInterval(updateBadgeWatchlist, 1000*60*5);
 
 browser.runtime.onInstalled.addListener(setDefaultSettings);
 browser.runtime.onInstalled.addListener(initializeWatchlist);
